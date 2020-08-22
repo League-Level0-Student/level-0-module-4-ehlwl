@@ -100,9 +100,11 @@ public class SleepyHead {
 
 	
 	static void drawRedSquare() {
+		
 		Robot rob = new Robot();
 		rob.penDown();
 		rob.setPenColor(256, 0, 0);
+		rob.setSpeed(1000);
 		for (int i=0;i<4;i++) {
 		rob.move(100);
 		rob.turn(90);
